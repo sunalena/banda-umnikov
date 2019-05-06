@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.banner1{
+    background: url(image/header.png);
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    height: 290px;
+}
+.label{
+    margin-right: 35px;
+    padding: 10px;
+    margin-left: 10%;
+    position: relative;
+}
+.label img{
+    position: relative;
+}
+#labelmini{
+    top: 5px; left: 65%; 
+    z-index: 1; 
+    position: absolute;
+}
+#content{
+    text-align: left;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+#content h1{
+    font-family:proxima, sans-serif;
+    margin: 0;
+    line-height: 1.2;
+    font-size: 1.6em;
+}
+#content p{
+    font-family:proxima_reg, sans-serif;
+    font-size: 0.83em;
+    margin: 0;
+    margin-bottom: 10px;
+}
+#content div > span{
+	border-radius: 3px;
+	display: inline-block;
+}
+.counter{
+    display: inline-block;
+    margin-right: 32px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Umnik,sans-serif;
+}
+.counter p {
+    font-size: 0.3em !important;
+    text-align: center;
+    margin-left: 5px !important;
+    margin-bottom: 0 !important;
+    font-family:proxima_reg, sans-serif;
+    font-weight:200;
+}
+
+.count_left{
+    height: 56px;
+    width: 41px;
+    border-right: 2px dashed #fbb100;
+    background: white; 
+    display: inline-flex;
+    border-radius: 5px 0 0 5px;
+}
+.count_left span, .count_right span{
+    padding-top: 3px;
+    padding-left: 10px;
+}
+.count_right{
+    height: 56px;
+    width: 41px;
+    background: white; 
+    display: inline-flex;
+    margin: -14px;
+    border-radius: 0 5px 5px 0;
+}
+.prise{
+    color: #ff0072;
+    display: block;
+}
+.prise h3{
+    margin: 0;
+    display:inline-block;
+    font-family: proxima, sans-serif;
+    font-weight: bold;
+    font-size: 26pt;
+}
+.sale{
+    display: block;
+}
+.sale p{
+    white-space:pre;
+	position:relative;
+	display:inline-block;
+    font-size:20px;
+    padding: 0;
+    margin: 0;
+    font-family:proxima_reg, sans-serif;
+}
+.sale p:after{
+    content:"";
+	display:block;
+	position:absolute;
+	left:0;top:50%;
+	color:#ff0072;
+	width:100%;
+	height:0;
+	border-bottom:2px solid #ff0072;
+	transform:rotate(9deg);
+}
+button{
+    background: #ff0072;
+    border: none;
+    color: #fff;
+    height: 46px;
+    width: 143px;
+    font-size: 0.85em;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    bottom: 25px;
+    margin-left: 25px;
+    font-family: proxima, sans-serif;
+}
+.cost{
+    width: 124px;
+    margin: 0;
+    display: inline-block;
+}
+.allPrice{
+    height: 63px;
+    display: block;
+    margin: 0;
+}
+@font-face{
+    font-family:umnik;
+    src:url(fonts/umnik-bold.woff2) format("woff2");
+    /*url(fonts/umnik-bold.woff) format("woff"); */
+    font-weight:700;
+    font-style:normal;
+    font-display:swap;
+}
+@font-face{
+   font-family:proxima;
+   src:url(fonts/proximanova-bold.woff2) format("woff2");
+   /*url(fonts/proximanova-bold.woff) format("woff");*/
+   font-weight:700;
+   font-style:normal;
+   font-display:swap;
+}
+@font-face{
+    font-family:proxima_reg;
+    src:url(fonts/proximanova-regular.woff2) format("woff2");
+    /*url(fonts/proximanova-regular.woff) format("woff");*/
+    font-weight:400;
+    font-style:normal;
+    font-display:swap
+}
+@media (max-width: 725px) and (min-width: 560px){
+    #content h1{
+        font-size: 1.5em;
+    }
+    #cubom{ 
+        flex: 1;
+    }
+    .label{
+        margin: 0;
+        margin-right: 5%;
+    }
+    #content{
+        flex: 2;
+        margin: 0;
+    }
+}
+@media (max-width: 1191px) and (min-width: 725px){
+    #content h1{
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 560px){
+    .banner1{
+        display: inline-block;
+        width: 100%;
+        height: 600px;
+    }
+    .label{
+        display: inline-block;
+        margin-left: 20%;
+    }
+    #content{
+        margin-left: 10%;
+    }
+}
+@media (max-width: 450px){
+    #content h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 400px){
+    .counter{
+        margin-right: 12px;
+    }
+    .banner1{
+        height: 700px;
+    }
+}
+@media (max-width: 372px){
+    button{
+        bottom: 10px;
+        margin-left: 0;
+    }
+}
